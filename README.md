@@ -1,2 +1,2 @@
 # java-oopera
-Repository for homework project.
+Приложение, моделирующее работу театра.
