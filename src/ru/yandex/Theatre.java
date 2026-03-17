@@ -49,5 +49,8 @@ public class Theatre {
 //      Выведем текст либретто для музыкальных представлений
         System.out.println(opera.getLibrettoText());
         System.out.println(ballet.getLibrettoText());
+
+//      Выведем имя и фамилию директора одной из постановок
+        theatrical.getDirector();
     }
 }

@@ -40,18 +40,16 @@ public class Show {
 
     public void replaceActor(Actor newActor, String surname) {
         boolean isActorExist = false;
-        int indexOfActor = 0;
         System.out.println("Представление: " + title + " - замена актера " + surname + " на " + newActor.surname);
         if (listOfActors != null) {
             for (Actor actor : listOfActors) {
                 if (actor.surname.equals(surname)) {
                     isActorExist = true;
-                    indexOfActor = listOfActors.indexOf(actor);
+                    listOfActors.set(listOfActors.indexOf(actor), newActor);
+                    break;
                 }
             }
             if (isActorExist) {
-                listOfActors.remove(indexOfActor);
-                listOfActors.add(newActor);
                 System.out.println("Актер успешно заменён");
             } else {
                 System.out.println("Актер, для которого производится замена, не найден");
@@ -59,6 +57,11 @@ public class Show {
         } else {
             System.out.println("Список актеров пуст");
         }
+    }
+
+    public void getDirector() {
+        System.out.println("\nРежиссер постановки " + title + ":\n"
+                            + " - " + director.name + " " +  director.surname);
     }
 
     @Override
