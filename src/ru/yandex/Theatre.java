@@ -51,6 +51,6 @@ public class Theatre {
         System.out.println(ballet.getLibrettoText());
 
 //      Выведем имя и фамилию директора одной из постановок
-        theatrical.getDirector();
+        theatrical.printDirector();
     }
 }

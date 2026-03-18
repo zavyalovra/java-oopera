@@ -59,7 +59,7 @@ public class Show {
         }
     }
 
-    public void getDirector() {
+    public void printDirector() {
         System.out.println("\nРежиссер постановки " + title + ":\n"
                             + " - " + director.name + " " +  director.surname);
     }
